@@ -21,11 +21,13 @@ public class Powersof2 {
 				 result = 1;
 				 
 				 else 
-					 result = 2*result;
+//					 result = 2*result;
+					 
+					 result=(int) Math.pow(2, power);
 				 
 			 }
 			 
-			 System.out.println("The 2 power nth value is "+result);
+			 System.out.println("The 2 power "+power+"th value is "+result);
 		}	
 				
 		else
