@@ -86,6 +86,8 @@ public class Library2DArray {
 			System.out.print("} ");
 		}
 		System.out.print("}");
+		
+		scn.close();
 	}
 
 }
