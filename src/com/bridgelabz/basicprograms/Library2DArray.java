@@ -8,21 +8,84 @@ public class Library2DArray {
 		
 		Scanner scn = new Scanner(System.in);
 		
-		System.out.println("Enter no. of rows and columns in an Library Array");
+		System.out.println("Enter no. of rows in an Library Array");
+		int m = scn.nextInt();
+		System.out.println("Enter no. of rows in an Library Array");
+		int n = scn.nextInt();
 		
-		int x = scn.nextInt();
-		int y = scn.nextInt();
-		
-		for(int i = 0; i < x; i++)
+		int intlibraryarray[][] = new int[m][n];
+		double doublelibraryarray[][] = new double[m][n];
+		boolean booleanlibraryarray[][] = new boolean[m][n];
+	
+		System.out.println("Enter Integer Array values");
+		for(int i = 0; i < m; i++)
 		{
-			for(int j = 0; j < y ; j++)
+			for(int j = 0; j < n ; j++)
 			{
-				String libraryarray[][]= new String[i][j];
-				
-				System.out.println("The Library Array values are "+libraryarray[i][j]);
+				intlibraryarray[i][j]=scn.nextInt();
 			}
 		}
-
+		
+		System.out.print("The Integer Library Array values are \n {");
+		for(int i = 0; i < m; i++)
+		{
+			System.out.print("{");
+			for(int j = 0; j < n ; j++)
+			{
+				System.out.print(intlibraryarray[i][j]);
+				if(j<n-1)
+					System.out.print(", ");
+			}
+			System.out.print("} ");
+		}
+		System.out.print("}\n");
+		
+		
+		System.out.println("Enter Double Array values");
+		for(int i = 0; i < m; i++)
+		{
+			for(int j = 0; j < n ; j++)
+			{
+				doublelibraryarray[i][j]=scn.nextDouble();
+			}
+		}
+		
+		System.out.print("The Integer Library Array values are \n {");
+		for(int i = 0; i < m; i++)
+		{
+			System.out.print("{");
+			for(int j = 0; j < n ; j++)
+			{
+				System.out.print(doublelibraryarray[i][j]);
+				if(j<n-1)
+					System.out.print(", ");
+			}
+			System.out.print("} ");
+		}
+		System.out.print("}\n");
+		
+		System.out.println("Enter Boolean Array values");
+		for(int i = 0; i < m; i++)
+		{
+			for(int j = 0; j < n ; j++)
+			{
+				booleanlibraryarray[i][j]=scn.nextBoolean();
+			}
+		}
+		
+		System.out.print("The Integer Library Array values are \n {");
+		for(int i = 0; i < m; i++)
+		{
+			System.out.print("{");
+			for(int j = 0; j < n ; j++)
+			{
+				System.out.print(booleanlibraryarray[i][j]);
+				if(j<n-1)
+					System.out.print(", ");
+			}
+			System.out.print("} ");
+		}
+		System.out.print("}");
 	}
 
 }
