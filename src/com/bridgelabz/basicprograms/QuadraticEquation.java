@@ -19,9 +19,9 @@ public class QuadraticEquation {
 		
 		double delta = b*b - 4*a*c;
 		
-		double root1x = (-b + Math.sqrt(delta) / (2*a));
+		double root1x = ((-b + Math.sqrt(delta)) / (2*a));
 		
-		double root2x = (-b - Math.sqrt(delta) / (2*a));
+		double root2x = ((-b - Math.sqrt(delta)) / (2*a));
 		
 		System.out.println("The roots of the Equation a*x*x + b*x + c  are ");
 		System.out.println("Root 1 of x = "+ root1x +"\tRoot 2 of x = "+ root2x);
