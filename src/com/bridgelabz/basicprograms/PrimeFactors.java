@@ -11,7 +11,7 @@ public class PrimeFactors {
 		Scanner scn = new Scanner(System.in);
 		int num = scn.nextInt();
 		
-		for(int i = 2; i*i< num; i++)
+		for(int i = 2; i< num; i++)
 		{
 			while(num%i == 0)
 			{
